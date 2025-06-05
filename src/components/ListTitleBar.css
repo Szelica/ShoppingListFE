@@ -1,0 +1,50 @@
+.list-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  color: var(--color-primary);
+  user-select: none;
+  cursor: pointer;
+}
+
+.list-toggle input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-white);
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.list-toggle input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--color-primary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.list-toggle input[type="checkbox"]:checked {
+  background-color: var(--color-muted-hover);
+  border-color: var(--color-primary);
+}
+
+.list-toggle input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+
+.list-toggle:hover {
+  color: var(--color-text);
+}

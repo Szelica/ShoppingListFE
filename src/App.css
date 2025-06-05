@@ -1,0 +1,39 @@
+/* === MAIN APP LAYOUT === */
+.app-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--space-md);
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-xlg);
+  color: var(--color-text);
+}
+
+/* === RESPONSIVE TWEAKS === */
+@media (max-width: 768px) {
+  .app-container {
+    padding: var(--space-sm);
+  }
+
+  .header-button {
+    font-size: var(--text-sm);
+    padding: var(--space-sm) var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: var(--space-xs);
+  }
+
+  .header-button {
+    font-size: var(--text-sm);
+    padding: 6px 12px;
+  }
+}
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-base);
+}

@@ -1,0 +1,101 @@
+/* === COLOR PALETTE — Custom Theme Based on Provided Palette === */
+:root {
+  /* Primary Theme Colors */
+  --color-primary: #96CDB0;
+  --color-primary-hover: #5A8F76;
+
+  --color-secondary: #0b3622;
+  --color-secondary-hover: #2c5a44;
+
+  --color-muted: #549c7b;
+  --color-muted-hover: #a7dddd;
+
+  --color-accent: #ca6d16;
+  --color-accent-hover: #ff5e00;
+
+  --color-bg: #fffce4;
+  --color-bg-hover: #dbd7b93a;
+
+  --color-text: #093131;
+  --color-text-muted: #203B37;
+
+  --color-border: #203B37;
+
+  --color-danger: #83201d;
+  --color-danger-hover: #b31611;
+}
+
+/* Dark theme override */
+[data-theme="dark"] {
+  --color-bg: #093131;
+  --color-bg-hover: #203B37;
+  --color-text: #fffce4;
+  --color-border: #7a7a7a;
+
+  --color-text-muted: #203B37;
+
+  --color-primary: #4f7262;
+  --color-primary-hover: #6eb18d;
+  --color-secondary: #5bb98f;
+  --color-secondary-hover: #2c5a44;
+  --color-muted: #465853;
+  --color-muted-hover: #000000;
+  --color-accent: #ca6d16;
+  --color-accent-hover: #ff5e00;
+  --color-danger: #7e1f1f;
+  --color-danger-hover: #9e1f1b;
+}
+
+/* === TYPOGRAPHY === */
+:root {
+  --font-base: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+/* === SPACING SYSTEM === */
+:root {
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+}
+
+/* === BORDER RADIUS === */
+:root {
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+/* === SHADOWS === */
+:root {
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --shadow-xlg: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* === TYPOGRAPHY LEVELS === */
+:root {
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-loose: 1.75;
+}
+

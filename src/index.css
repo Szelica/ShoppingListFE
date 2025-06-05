@@ -1,0 +1,13 @@
+@import "./theme.css";
+@import "./typography.css";
+
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  position: relative;
+  z-index: 1;
+}

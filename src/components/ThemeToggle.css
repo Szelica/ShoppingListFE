@@ -1,0 +1,32 @@
+
+.theme-toggle {
+  width: 52px;
+  height: 28px;
+  background: var(--color-primary-hover);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.toggle-thumb {
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Move thumb right if dark theme */
+.toggle-thumb.dark {
+  transform: translateX(24px);
+}

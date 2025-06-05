@@ -1,0 +1,12 @@
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.checkbox-label-content {
+  flex: 1;
+  user-select: none;
+  line-height: 1.4;
+  cursor: default;
+}

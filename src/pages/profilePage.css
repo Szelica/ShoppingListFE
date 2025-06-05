@@ -1,0 +1,14 @@
+.profile-page {
+  padding: var(--space-lg);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+.profile-section {
+  margin-bottom: var(--space-lg);
+}
+
+.profile-hint {
+  color: var(--color-border);
+  font-style: italic;
+}

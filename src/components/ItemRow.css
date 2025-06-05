@@ -1,0 +1,24 @@
+.item-row {
+  display: flex;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--color-bg);
+  background-color: var(--color-bg);
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+/* Completed item styling */
+.item-row.completed {
+  background-color: var(--color-muted);
+  border-radius: 6px;
+  font-style: var(--color-muted-hover); /* dimmed text color */
+  font-style: italic;
+  color: var(--color-muted-hover);
+}
+
+/* Optional: Style completed text */
+.item-row.completed span {
+  font-style: italic;
+  color: var(--color-muted-hover);
+}

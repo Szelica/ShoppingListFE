@@ -1,0 +1,127 @@
+.shopping-list-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg);
+  border-radius: var(--radius-md);
+  min-height: 40px;
+  padding: 0 var(--space-sm);
+  transition: background-color 0.2s ease;
+  overflow: hidden;
+}
+
+.shopping-list-card:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.shopping-list-header {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.shopping-list-name {
+  font-weight: var(--font-bold);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.shopping-list-name:hover {
+  color: var(--color-primary-hover);
+}
+
+/* === 3-dot icon button === */
+.btn-icon-dots {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* === Actions Panel === */
+.shopping-list-actions {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0 var(--space-xs);
+  background-color: transparent;
+  transform: translateX(20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1;
+}
+
+.shopping-list-actions.visible {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.shopping-list-actions .btn {
+  min-width: 32px;
+  height: 32px;
+  padding: 6px;
+  font-size: 18px;
+  line-height: 1;
+  position: relative;
+}
+
+/* === ARCHIVED STATE === */
+.shopping-list-card.archived {
+  background-color: var(--color-primary);
+  opacity: 0.75;
+}
+
+.shopping-list-card.archived:hover {
+  background-color: var(--color-primary-hover);
+  opacity: 0.75;
+}
+
+.shopping-list-card.archived .shopping-list-name {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.shopping-list-card.archived .btn-icon-dots {
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+/* === TOOLTIP === */
+.btn[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 3;
+}
+
+.btn[data-tooltip]:hover::after {
+  opacity: 1;
+}

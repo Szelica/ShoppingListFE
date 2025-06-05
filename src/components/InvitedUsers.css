@@ -1,0 +1,26 @@
+.invited-users-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-muted);
+  border-radius: var(--radius-md);
+}
+
+.invited-users-title {
+  margin: 0;
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+}
+
+.invited-users-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.invited-user-item {
+  padding: var(--space-xs) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

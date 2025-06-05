@@ -1,0 +1,16 @@
+.app-label {
+  font-size: var(--text-base);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  user-select: none;
+  line-height: var(--line-height-normal);
+}
+
+/* Optional modifiers */
+.app-label.bold {
+  font-weight: var(--font-bold);
+}
+
+.app-label.small {
+  font-size: var(--text-sm);
+}

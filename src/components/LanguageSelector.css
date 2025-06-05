@@ -1,0 +1,46 @@
+.language-dropdown {
+  position: relative;
+}
+
+.language-button {
+  padding: 6px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.language-button:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.language-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  margin-top: 4px;
+  z-index: 100;
+  list-style: none;
+  padding: 4px 0;
+}
+
+.language-option {
+  padding: 6px 12px;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.language-option:hover,
+.language-option.active {
+  background-color: var(--color-bg-hover);
+  font-weight: 600;
+}

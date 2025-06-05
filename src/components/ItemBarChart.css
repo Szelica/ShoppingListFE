@@ -1,0 +1,6 @@
+.item-bar-chart {
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
