@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# 🛒 ShoppingListFE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started with ShoppingListFE
+
+This project was built with [Create React App](https://github.com/facebook/create-react-app) and extended with custom components, state management, and mock backend functionality for shopping list management.
 
 ## Available Scripts
 
@@ -16,8 +18,7 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
@@ -27,44 +28,95 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time.\
+This command will remove the single build dependency from your project and copy all configuration files directly into your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Simulated user via local mock data
+- Create and manage shopping lists
+- Add, edit, and delete items
+- Share lists with invited users
+- Invited users can leave lists
+- Archive lists
+- Light/Dark mode toggle
+- Language switcher (EN / SK / HU / CZ)
+- Uses mock backend (.json files)
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+src/
+├── components/ # Reusable UI components (Button, Modal, Footer...)
+├── pages/ # Page components (Dashboard, Profile, ShoppinglistDetail...)
+├── context/ # UserContext and global state
+├── hooks/ # Custom React hooks
+├── mockdata/ # JSON files simulating backend data
+├── middleware/ # Mock API calls (e.g., calls.js)
+├── theme.css # Custom colors and themes
+├── typography.css # Fonts and text styles
+└── App.js # Entry point with routing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# 🛒 ShoppingListFE Slovenska verzia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Začíname so ShoppingListFE
 
-### Making a Progressive Web App
+Tento projekt je postavený pomocou [Create React App](https://github.com/facebook/create-react-app) a rozšírený o vlastné komponenty, stavovú správu a falošný backend (mock dáta) na správu nákupných zoznamov.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Dostupné skripty
 
-### Advanced Configuration
+V koreňovom priečinku projektu môžeš spustiť:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### `npm start`
 
-### Deployment
+Spustí aplikáciu v režime vývoja.\
+Otvor [http://localhost:3000](http://localhost:3000) vo svojom prehliadači.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Stránka sa automaticky obnoví pri zmene súborov.\
+V konzole sa zobrazia aj prípadné chyby (lint).
 
-### `npm run build` fails to minify
+### `npm test`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Spustí testy v interaktívnom režime.
+
+### `npm run build`
+
+Vytvorí optimalizovanú verziu aplikácie v priečinku `build`.\
+Kód bude minifikovaný a pripravený na nasadenie.
+
+### `npm run eject`
+
+**Pozor: tento krok je nevratný. Po vykonaní `eject` sa nedá vrátiť späť!**
+
+Príkaz odstráni závislosť od prednastavených nástrojov a presunie všetky konfiguračné súbory do projektu.
+
+## ✨ Funkcionalita
+
+- 🔐 Simulovaný prihlásený užívateľ cez lokálne dáta\
+- 📝 Vytváranie a správa nákupných zoznamov\
+- 🛒 Pridávanie, úprava a mazanie položiek v zoznamoch\
+- 👥 Zdieľanie zoznamov s pozvanými používateľmi\
+- 🚪 Možnosť, aby pozvaný používateľ opustil zoznam\
+- 📦 Archivácia zoznamov\
+- 🌙 Prepínač svetlého/tmavého režimu\
+- 🌍 Prepínanie jazyka (EN / SK / HU / CZ)\
+- 🧪 Používanie falošného backendu cez `.json` súbory
+
+## 📁 Štruktúra projektu
+
+src/
+├── components/ # UI komponenty (tlačidlá, modály, footer atď.)
+├── pages/ # Stránky aplikácie (Dashboard, Login, Register...)
+├── context/ # Správa globálneho stavu (napr. UserContext)
+├── hooks/ # Vlastné React hooky
+├── mockdata/ # Mock JSON súbory simulujúce backend
+├── middleware/ # Volania na mock server (napr. calls.js)
+├── theme.css # Paleta farieb a téma
+├── typography.css # Typografia a fonty
+└── App.js # Vstupný bod aplikácie s routingom
